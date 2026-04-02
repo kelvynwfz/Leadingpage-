@@ -153,16 +153,16 @@ const WhatsAppButton = ({ className = '', text = 'Chamar no WhatsApp', secondary
     href="https://wa.me/5582991068093"
     target="_blank"
     rel="noopener noreferrer"
-    whileHover={{ scale: 1.05 }}
+    whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.95 }}
-    className={`flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 ${
+    className={`flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 relative overflow-hidden group ${
       secondary 
         ? 'bg-transparent border-2 border-premium-blue text-premium-ice hover:bg-premium-blue/10' 
-        : 'bg-whatsapp text-white hover:bg-whatsapp-hover whatsapp-shadow'
+        : 'bg-whatsapp/20 backdrop-blur-xl text-white border border-white/30 shadow-[0_8px_32px_0_rgba(37,211,102,0.2)] hover:shadow-[0_8px_32px_0_rgba(37,211,102,0.4)] before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/30 before:to-transparent before:opacity-40 after:absolute after:inset-0 after:rounded-full after:border after:border-whatsapp/50 after:opacity-0 hover:after:opacity-100 transition-opacity'
     } ${className}`}
   >
-    <MessageCircle size={24} />
-    {text}
+    <MessageCircle size={24} className="relative z-10 text-whatsapp drop-shadow-[0_0_8px_rgba(37,211,102,0.8)]" />
+    <span className="relative z-10 drop-shadow-md">{text}</span>
   </motion.a>
 );
 
@@ -226,10 +226,10 @@ const ModelPage = ({ model, onBack }: { model: iPhoneModel, onBack: () => void }
       <div className="container mx-auto px-6">
         <button 
           onClick={onBack}
-          className="flex items-center gap-2 text-premium-gray hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 px-6 py-3 rounded-full font-bold text-premium-ice bg-white/5 backdrop-blur-xl border border-white/20 shadow-xl hover:bg-white/10 hover:shadow-2xl transition-all duration-300 mb-8 relative overflow-hidden group before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-30"
         >
-          <ArrowRight size={20} className="rotate-180" />
-          Voltar para Início
+          <ArrowRight size={20} className="rotate-180 relative z-10" />
+          <span className="relative z-10">Voltar para Início</span>
         </button>
 
         {/* Hero Section */}
@@ -393,11 +393,6 @@ export default function App() {
     return (
       <div className="min-h-screen font-sans selection:bg-premium-blue selection:text-white">
         <ModelPage model={selectedModel} onBack={() => setSelectedModelId(null)} />
-        
-        {/* Sticky Bottom Bar (Mobile) */}
-        <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-premium-black/80 backdrop-blur-lg border-t border-white/10 p-4">
-          <WhatsAppButton text="Pedir no WhatsApp" className="w-full py-3 text-base" />
-        </div>
       </div>
     );
   }
@@ -511,12 +506,12 @@ export default function App() {
               <WhatsAppButton className="w-full sm:w-auto" />
               <motion.a 
                 href="#modelos"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg border-2 border-white/10 hover:bg-white/5 transition-all"
+                className="flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 relative overflow-hidden group bg-white/5 backdrop-blur-xl text-white border border-white/20 shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.2)] before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-30"
               >
-                Ver Modelos
-                <ArrowRight size={20} />
+                <span className="relative z-10">Ver Modelos</span>
+                <ArrowRight size={20} className="relative z-10" />
               </motion.a>
             </motion.div>
 
@@ -619,9 +614,9 @@ export default function App() {
                 </div>
                 <button 
                   onClick={() => setSelectedModelId(card.targetId)}
-                  className="w-full py-3 text-base font-bold rounded-full bg-premium-blue/10 text-premium-blue hover:bg-premium-blue hover:text-white transition-all"
+                  className="w-full py-3 text-base font-bold rounded-full transition-all duration-300 relative overflow-hidden group bg-premium-blue/10 backdrop-blur-xl text-premium-blue border border-premium-blue/30 shadow-[0_8px_32px_0_rgba(0,113,227,0.1)] hover:shadow-[0_8px_32px_0_rgba(0,113,227,0.2)] before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-30"
                 >
-                  Ver Detalhes
+                  <span className="relative z-10">Ver Detalhes</span>
                 </button>
               </motion.div>
             ))}
@@ -691,8 +686,8 @@ export default function App() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{model.name}</h3>
                   <p className="text-premium-blue font-medium text-sm mb-4">A partir de R$ {model.priceFrom}</p>
-                  <button className="w-full py-2.5 text-sm font-bold rounded-full border border-premium-blue text-premium-blue group-hover:bg-premium-blue group-hover:text-white transition-all">
-                    Ver Detalhes do {model.name}
+                  <button className="w-full py-2.5 text-sm font-bold rounded-full transition-all duration-300 relative overflow-hidden group bg-premium-blue/10 backdrop-blur-xl text-premium-blue border border-premium-blue/30 shadow-[0_8px_32px_0_rgba(0,113,227,0.1)] hover:shadow-[0_8px_32px_0_rgba(0,113,227,0.2)] before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-30">
+                    <span className="relative z-10">Ver Detalhes do {model.name}</span>
                   </button>
                 </div>
               </motion.div>
@@ -857,11 +852,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* --- Sticky Bottom Bar (Mobile) --- */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-premium-black/80 backdrop-blur-lg border-t border-white/10 p-4">
-        <WhatsAppButton text="Pedir no WhatsApp" className="w-full py-3 text-base" />
-      </div>
 
     </div>
   );
