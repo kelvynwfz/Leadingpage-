@@ -45,8 +45,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Estudantes e usuários que buscam o básico com qualidade Apple.',
     benefits: ['Câmera Dupla de 12MP', 'Bateria para o dia todo', 'Chip A13 Bionic'],
     gallery: [
-      'https://i.pinimg.com/1200x/3c/02/c1/3c02c120bf46df0b226361902538233b.jpg',
-      'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/736x/35/7b/64/357b64f3da9e56553d408df05dcd783c.jpg',
+      'https://i.pinimg.com/736x/10/b1/bc/10b1bc9a2fc536f4a4462389a7d5089a.jpg'
     ]
   },
   { 
@@ -59,8 +59,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Quem busca design atual e velocidade 5G sem gastar muito.',
     benefits: ['Tela Super Retina XDR', 'MagSafe', 'Modo Noite em todas as câmeras'],
     gallery: [
-      'https://i.pinimg.com/736x/8f/49/e0/8f49e0b777e8769f765a66972b44b4ee.jpg',
-      'https://images.unsplash.com/photo-1611186871348-b1ec696e52c9?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/736x/d7/43/98/d74398cb37d76ccb43ed0333b732363c.jpg',
+      'https://i.pinimg.com/736x/d4/53/2b/d4532b081cd74abb479038db5f5081d0.jpg'
     ]
   },
   { 
@@ -73,8 +73,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Usuários intensos que precisam de bateria e câmeras avançadas.',
     benefits: ['Modo Cinema', 'Estilos Fotográficos', 'Bateria Gigante'],
     gallery: [
-      'https://i.pinimg.com/736x/76/5f/f1/765ff169758d563fe0d5ee82b559bef5.jpg',
-      'https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/736x/19/17/29/191729cbeba8a25e0a74c5393546289b.jpg',
+      'https://i.pinimg.com/736x/fc/73/20/fc7320e6c47b5e7ff247f5a896843096.jpg'
     ]
   },
   { 
@@ -87,8 +87,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Quem quer as tecnologias mais recentes de segurança e estabilidade.',
     benefits: ['Detecção de Acidente', 'Câmera Frontal com Autofoco', 'Action Mode'],
     gallery: [
-      'https://i.pinimg.com/1200x/e0/60/7f/e0607f37744bb96c85bfbfe0eedfce42.jpg',
-      'https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/736x/04/2e/33/042e330cf0a2c6f69ba2fa4285280a93.jpg',
+      'https://i.pinimg.com/736x/0f/5c/4e/0f5c4e94f08b266d85deeddceaf0d27a.jpg'
     ]
   },
   { 
@@ -101,8 +101,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Entusiastas de tecnologia que buscam a nova conexão padrão e design inovador.',
     benefits: ['Dynamic Island', 'Câmera de 48MP', 'Conector USB-C'],
     gallery: [
-      'https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone_15_hero.png',
-      'https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/736x/ac/f1/b6/acf1b65406600d8bcf95c21aba209123.jpg',
+      'https://i.pinimg.com/736x/fc/f4/16/fcf41636868962a586dca6791f6dd047.jpg'
     ]
   },
   { 
@@ -115,8 +115,8 @@ const IPHONE_MODELS: iPhoneModel[] = [
     idealFor: 'Quem não aceita nada menos que o topo de linha absoluto.',
     benefits: ['Apple Intelligence', 'Camera Control', 'Chip A18'],
     gallery: [
-      'https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121030-iphone-16-plus.png',
-      'https://images.unsplash.com/photo-1727116194334-31952288091d?auto=format&fit=crop&q=80&w=400'
+      'https://i.pinimg.com/1200x/71/31/53/713153d977227fd286a7c7a93303bd6d.jpg',
+      'https://i.pinimg.com/736x/92/a8/8c/92a88cada93c6499a47264a2552af2f1.jpg'
     ]
   }
 ];
@@ -125,6 +125,18 @@ const TESTIMONIALS = [
   { name: 'Ricardo Silva', text: 'Atendimento muito rápido e super prático. Recomendo!', rating: 5 },
   { name: 'Ana Costa', text: 'Consegui tirar todas as dúvidas no WhatsApp antes de comprar.', rating: 5 },
   { name: 'Marcos Oliveira', text: 'Achei meu iPhone de forma muito mais fácil que em outras lojas.', rating: 5 },
+];
+
+const CUSTOMER_PHOTOS = [
+  'https://www.infomoney.com.br/wp-content/uploads/2019/06/loja-da-apple.jpg?fit=756%2C413&quality=50&strip=all',
+  'https://s2-g1.glbimg.com/3AK-hc37czysZ5ajB2hnggbHOZU=/0x0:3500x2379/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/c/v/3IlQOnQ86bT6Bydb8ODQ/2017-11-02t214433z-626462141-rc1f86d8d720-rtrmadp-3-apple-iphone.jpg',
+  'https://www.estadao.com.br/resizer/v2/ZXNOQC7QZFJPJHWQYT3ZFETCRU.jpg?quality=80&auth=178be8de44580dcd31b38046a878acd08a7a4e3df84d92e6fd6ff8a8ad22d389&width=1200&height=1200&focal=0,0',
+  'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800',
+  'https://images.unsplash.com/photo-1556656793-062ff987b50d?auto=format&fit=crop&q=80&w=800',
+  'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800',
+  'https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&q=80&w=800',
+  'https://images.unsplash.com/photo-1592890288564-76628a30a657?auto=format&fit=crop&q=80&w=800',
+  'https://images.unsplash.com/photo-1533228891704-f04928a52962?auto=format&fit=crop&q=80&w=800',
 ];
 
 const FAQS = [
@@ -153,6 +165,51 @@ const WhatsAppButton = ({ className = '', text = 'Chamar no WhatsApp', secondary
     {text}
   </motion.a>
 );
+
+const CustomerCarousel = () => {
+  const [isPaused, setIsPaused] = useState(false);
+  
+  // Duplicate photos for seamless loop
+  const duplicatedPhotos = [...CUSTOMER_PHOTOS, ...CUSTOMER_PHOTOS];
+
+  return (
+    <div 
+      className="relative overflow-hidden py-10 cursor-grab active:cursor-grabbing"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+      onTouchStart={() => setIsPaused(true)}
+      onTouchEnd={() => setIsPaused(false)}
+    >
+      <motion.div 
+        className="flex gap-6 px-6"
+        animate={{
+          x: isPaused ? undefined : ['0%', '-50%']
+        }}
+        transition={{
+          duration: 40,
+          ease: "linear",
+          repeat: Infinity,
+        }}
+        style={{ width: 'fit-content' }}
+      >
+        {duplicatedPhotos.map((photo, i) => (
+          <motion.div 
+            key={i} 
+            whileHover={{ y: -10 }}
+            className="w-[280px] md:w-[350px] flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl border border-white/10 group"
+          >
+            <img 
+              src={photo} 
+              alt={`Cliente iStorePremium ${i}`} 
+              className="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-110 transition-transform duration-700"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
 
 const ModelPage = ({ model, onBack }: { model: iPhoneModel, onBack: () => void }) => {
   useEffect(() => {
@@ -227,16 +284,22 @@ const ModelPage = ({ model, onBack }: { model: iPhoneModel, onBack: () => void }
         {/* Gallery */}
         <div className="mb-24">
           <h2 className="text-3xl font-bold mb-12 text-center">Galeria Visual</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="columns-1 md:columns-2 gap-6 space-y-6">
             {model.gallery.map((img, i) => (
-              <div key={i} className="rounded-3xl overflow-hidden border border-white/10 aspect-video">
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="rounded-3xl overflow-hidden border border-white/10 break-inside-avoid"
+              >
                 <img 
                   src={img} 
                   alt={`${model.name} view ${i}`} 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-auto hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -346,8 +409,13 @@ export default function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-premium-black/80 backdrop-blur-md py-4 border-b border-white/10' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setSelectedModelId(null)}>
-            <div className="w-8 h-8 bg-premium-blue rounded-lg flex items-center justify-center">
-              <Smartphone size={20} className="text-white" />
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
+                alt="Apple Logo" 
+                className="w-full h-full"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <span className="text-xl font-bold tracking-tighter">iStore<span className="text-premium-blue">Premium</span></span>
           </div>
@@ -402,6 +470,19 @@ export default function App() {
               <span>Atendimento Prioritário via WhatsApp</span>
             </motion.div>
             
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="mb-8"
+            >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
+                alt="Apple Logo" 
+                className="w-12 h-12 invert"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -548,6 +629,35 @@ export default function App() {
         </div>
       </section>
 
+      {/* --- Nossos Clientes --- */}
+      <section className="py-24 bg-premium-dark-blue/30 overflow-hidden">
+        <div className="container mx-auto px-6 mb-12 text-center">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-5xl font-bold mb-4 tracking-tight"
+          >
+            NOSSOS CLIENTES
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg text-premium-gray max-w-2xl mx-auto"
+          >
+            Clientes reais que confiaram na iStorePremium para garantir seu iPhone com segurança e atendimento direto.
+          </motion.p>
+        </div>
+
+        <CustomerCarousel />
+
+        <div className="container mx-auto px-6 mt-12 flex justify-center">
+          <WhatsAppButton text="Quero meu iPhone" className="w-full sm:w-auto text-xl px-12 py-6" />
+        </div>
+      </section>
+
       {/* --- Featured Models --- */}
       <section className="py-24">
         <div className="container mx-auto px-6">
@@ -663,39 +773,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- Testimonials --- */}
-      <section className="py-24 bg-premium-dark-blue/30">
-        <div className="container mx-auto px-6">
-          <SectionTitle title="O que dizem nossos clientes" />
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="glass-card p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(t.rating)].map((_, idx) => (
-                    <Star key={idx} size={16} className="fill-premium-blue text-premium-blue" />
-                  ))}
-                </div>
-                <p className="italic text-premium-ice/90 mb-6">"{t.text}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-premium-blue/20 flex items-center justify-center font-bold text-premium-blue">
-                    {t.name.charAt(0)}
-                  </div>
-                  <span className="font-bold">{t.name}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* --- FAQ --- */}
       <section id="faq" className="py-24">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -757,8 +834,13 @@ export default function App() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-premium-blue rounded-lg flex items-center justify-center">
-                <Smartphone size={20} className="text-white" />
+              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
+                  alt="Apple Logo" 
+                  className="w-full h-full"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <span className="text-xl font-bold tracking-tighter">iStore<span className="text-premium-blue">Premium</span></span>
             </div>
