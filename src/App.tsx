@@ -40,12 +40,12 @@ const IPHONE_MODELS: iPhoneModel[] = [
     name: 'iPhone 11', 
     category: 'economize', 
     description: 'O melhor custo-benefício para quem quer entrar no mundo Apple.',
-    image: 'https://cdsassets.apple.com/content/services/pub/image?productid=507882&size=240x240',
+    image: 'https://i.pinimg.com/1200x/3c/02/c1/3c02c120bf46df0b226361902538233b.jpg',
     priceFrom: '1.999',
     idealFor: 'Estudantes e usuários que buscam o básico com qualidade Apple.',
     benefits: ['Câmera Dupla de 12MP', 'Bateria para o dia todo', 'Chip A13 Bionic'],
     gallery: [
-      'https://cdsassets.apple.com/content/services/pub/image?productid=507882&size=240x240',
+      'https://i.pinimg.com/1200x/3c/02/c1/3c02c120bf46df0b226361902538233b.jpg',
       'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&q=80&w=400'
     ]
   },
@@ -54,12 +54,12 @@ const IPHONE_MODELS: iPhoneModel[] = [
     name: 'iPhone 12', 
     category: 'economize', 
     description: 'Design moderno com tela OLED e tecnologia 5G.',
-    image: 'https://cdsassets.apple.com/content/services/pub/image?productid=300239&size=240x240',
+    image: 'https://i.pinimg.com/736x/8f/49/e0/8f49e0b777e8769f765a66972b44b4ee.jpg',
     priceFrom: '2.499',
     idealFor: 'Quem busca design atual e velocidade 5G sem gastar muito.',
     benefits: ['Tela Super Retina XDR', 'MagSafe', 'Modo Noite em todas as câmeras'],
     gallery: [
-      'https://cdsassets.apple.com/content/services/pub/image?productid=300239&size=240x240',
+      'https://i.pinimg.com/736x/8f/49/e0/8f49e0b777e8769f765a66972b44b4ee.jpg',
       'https://images.unsplash.com/photo-1611186871348-b1ec696e52c9?auto=format&fit=crop&q=80&w=400'
     ]
   },
@@ -68,12 +68,12 @@ const IPHONE_MODELS: iPhoneModel[] = [
     name: 'iPhone 13', 
     category: 'equilibrio', 
     description: 'Potência e bateria que duram o dia todo com design moderno.',
-    image: 'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111872_iphone13-colors-480.png',
+    image: 'https://i.pinimg.com/736x/76/5f/f1/765ff169758d563fe0d5ee82b559bef5.jpg',
     priceFrom: '3.299',
     idealFor: 'Usuários intensos que precisam de bateria e câmeras avançadas.',
     benefits: ['Modo Cinema', 'Estilos Fotográficos', 'Bateria Gigante'],
     gallery: [
-      'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111872_iphone13-colors-480.png',
+      'https://i.pinimg.com/736x/76/5f/f1/765ff169758d563fe0d5ee82b559bef5.jpg',
       'https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&q=80&w=400'
     ]
   },
@@ -82,12 +82,12 @@ const IPHONE_MODELS: iPhoneModel[] = [
     name: 'iPhone 14', 
     category: 'equilibrio', 
     description: 'Segurança e performance refinada para o seu dia a dia.',
-    image: 'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111850_iphone-14_1.png',
+    image: 'https://i.pinimg.com/1200x/e0/60/7f/e0607f37744bb96c85bfbfe0eedfce42.jpg',
     priceFrom: '3.999',
     idealFor: 'Quem quer as tecnologias mais recentes de segurança e estabilidade.',
     benefits: ['Detecção de Acidente', 'Câmera Frontal com Autofoco', 'Action Mode'],
     gallery: [
-      'https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111850_iphone-14_1.png',
+      'https://i.pinimg.com/1200x/e0/60/7f/e0607f37744bb96c85bfbfe0eedfce42.jpg',
       'https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&q=80&w=400'
     ]
   },
@@ -138,7 +138,7 @@ const FAQS = [
 
 const WhatsAppButton = ({ className = '', text = 'Chamar no WhatsApp', secondary = false }) => (
   <motion.a
-    href="https://wa.me/5511999999999" // Replace with real number
+    href="https://wa.me/5582991068093"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.05 }}
@@ -331,20 +331,6 @@ export default function App() {
       <div className="min-h-screen font-sans selection:bg-premium-blue selection:text-white">
         <ModelPage model={selectedModel} onBack={() => setSelectedModelId(null)} />
         
-        {/* Fixed WhatsApp Button (Mobile) */}
-        <div className="md:hidden fixed bottom-6 right-6 z-50">
-          <motion.a
-            href="https://wa.me/5511999999999"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-16 h-16 bg-whatsapp rounded-full flex items-center justify-center text-white shadow-2xl whatsapp-shadow"
-          >
-            <MessageCircle size={32} />
-          </motion.a>
-        </div>
-
         {/* Sticky Bottom Bar (Mobile) */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-premium-black/80 backdrop-blur-lg border-t border-white/10 p-4">
           <WhatsAppButton text="Pedir no WhatsApp" className="w-full py-3 text-base" />
@@ -789,20 +775,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* --- Fixed WhatsApp Button (Mobile) --- */}
-      <div className="md:hidden fixed bottom-6 right-6 z-50">
-        <motion.a
-          href="https://wa.me/5511999999999"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-16 h-16 bg-whatsapp rounded-full flex items-center justify-center text-white shadow-2xl whatsapp-shadow"
-        >
-          <MessageCircle size={32} />
-        </motion.a>
-      </div>
 
       {/* --- Sticky Bottom Bar (Mobile) --- */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-premium-black/80 backdrop-blur-lg border-t border-white/10 p-4">
