@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-premium-black: #05070D;
+  --color-premium-dark-blue: #081326;
+  --color-premium-blue: #2F7CFF;
+  --color-premium-neon-blue: #5AA8FF;
+  --color-premium-ice: #F7FAFF;
+  --color-premium-gray: #B9C3D6;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #1EBE5A;
+
+  --font-sans: "Inter", "Manrope", "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-premium-black text-premium-ice antialiased overflow-x-hidden;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+}
+
+.blue-glow {
+  box-shadow: 0 0 40px -10px rgba(47, 124, 255, 0.3);
+}
+
+.whatsapp-shadow {
+  box-shadow: 0 4px 20px -5px rgba(37, 211, 102, 0.4);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
