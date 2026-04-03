@@ -200,7 +200,7 @@ const CustomerCarousel = () => {
           >
             <img 
               src={photo} 
-              alt={`Cliente iStorePremium ${i}`} 
+              alt={`Cliente Kelvyn.c ${i}`} 
               className="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-110 transition-transform duration-700"
               referrerPolicy="no-referrer"
             />
@@ -404,15 +404,15 @@ export default function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-premium-black/80 backdrop-blur-md py-4 border-b border-white/10' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => setSelectedModelId(null)}>
-            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+            <div className="w-8 h-8 flex items-center justify-center">
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
                 alt="Apple Logo" 
-                className="w-full h-full"
+                className="w-full h-full invert"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <span className="text-xl font-bold tracking-tighter">iStore<span className="text-premium-blue">Premium</span></span>
+            <span className="text-xl font-bold tracking-tighter">Kelvyn<span className="text-premium-blue">.c</span></span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -505,7 +505,7 @@ export default function App() {
             >
               <WhatsAppButton className="w-full sm:w-auto" />
               <motion.a 
-                href="#modelos"
+                href="#iphones"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 relative overflow-hidden group bg-white/5 backdrop-blur-xl text-white border border-white/20 shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.2)] before:absolute before:inset-0 before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-30"
@@ -642,7 +642,7 @@ export default function App() {
             transition={{ delay: 0.1 }}
             className="text-lg text-premium-gray max-w-2xl mx-auto"
           >
-            Clientes reais que confiaram na iStorePremium para garantir seu iPhone com segurança e atendimento direto.
+            Clientes reais que confiaram na Kelvyn.c para garantir seu iPhone com segurança e atendimento direto.
           </motion.p>
         </div>
 
@@ -654,7 +654,7 @@ export default function App() {
       </section>
 
       {/* --- Featured Models --- */}
-      <section className="py-24">
+      <section id="iphones" className="py-24">
         <div className="container mx-auto px-6">
           <SectionTitle 
             title="Modelos em Destaque" 
@@ -712,7 +712,7 @@ export default function App() {
                     { step: '01', title: 'Escolha o modelo', desc: 'Navegue pela nossa vitrine e escolha o iPhone que mais combina com você.' },
                     { step: '02', title: 'Chame no WhatsApp', desc: 'Clique em um dos botões para iniciar uma conversa direta com nosso time.' },
                     { step: '03', title: 'Tire suas dúvidas', desc: 'Veja fotos reais, consulte a disponibilidade e formas de pagamento.' },
-                    { step: '04', title: 'Finalize seu pedido', desc: 'Receba seu iPhone com toda segurança e garantia iStorePremium.' },
+                    { step: '04', title: 'Finalize seu pedido', desc: 'Receba seu iPhone com toda segurança e garantia Kelvyn.c.' },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4">
                       <div className="text-premium-blue font-bold text-xl opacity-50">{item.step}</div>
@@ -725,14 +725,19 @@ export default function App() {
                 </div>
               </div>
               
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1556656793-062ff9878258?auto=format&fit=crop&q=80&w=600" 
-                  alt="Atendimento WhatsApp" 
-                  className="rounded-2xl shadow-2xl border border-white/10"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute -bottom-6 -right-6 bg-whatsapp p-4 rounded-2xl shadow-xl animate-bounce">
+              <div className="relative flex items-center justify-center min-h-[300px] glass-card border-premium-blue/20">
+                <div className="flex flex-col items-center gap-4">
+                  <div className="w-20 h-20 flex items-center justify-center">
+                    <img 
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
+                      alt="Apple Logo" 
+                      className="w-full h-full invert opacity-80"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                  <span className="text-4xl font-bold tracking-tighter">Kelvyn<span className="text-premium-blue">.c</span></span>
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-whatsapp p-4 rounded-2xl shadow-xl animate-bounce z-10">
                   <MessageCircle size={32} className="text-white" />
                 </div>
               </div>
@@ -744,7 +749,7 @@ export default function App() {
       {/* --- Benefits --- */}
       <section id="beneficios" className="py-24">
         <div className="container mx-auto px-6">
-          <SectionTitle title="Por que escolher a iStorePremium?" />
+          <SectionTitle title="Por que escolher a Kelvyn.c?" />
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -829,15 +834,15 @@ export default function App() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center p-1">
+              <div className="w-8 h-8 flex items-center justify-center">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
                   alt="Apple Logo" 
-                  className="w-full h-full"
+                  className="w-full h-full invert"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <span className="text-xl font-bold tracking-tighter">iStore<span className="text-premium-blue">Premium</span></span>
+              <span className="text-xl font-bold tracking-tighter">Kelvyn<span className="text-premium-blue">.c</span></span>
             </div>
             
             <div className="flex gap-8 text-sm text-premium-gray">
@@ -847,7 +852,7 @@ export default function App() {
             </div>
 
             <p className="text-sm text-premium-gray">
-              © 2024 iStorePremium. Todos os direitos reservados.
+              © 2024 Kelvyn.c. Todos os direitos reservados.
             </p>
           </div>
         </div>
