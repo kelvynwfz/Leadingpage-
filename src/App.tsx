@@ -523,9 +523,9 @@ export default function App() {
             >
               <div className="absolute inset-0 bg-premium-blue/20 blur-[100px] rounded-full" />
               <img 
-                src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=800" 
+                src="https://i.postimg.cc/Qt1FJyXj/iphone-17-overview-cg0rlzmbhl7m-og-(2).png" 
                 alt="iPhones Premium" 
-                className="relative z-10 w-full max-w-2xl mx-auto rounded-3xl shadow-2xl border border-white/10 animate-float"
+                className="relative z-10 w-full max-w-2xl mx-auto animate-float"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
